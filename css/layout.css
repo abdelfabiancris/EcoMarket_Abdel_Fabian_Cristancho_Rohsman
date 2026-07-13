@@ -233,6 +233,28 @@ HERO
 }
 
 /* ==========================
+FEATURED PRODUCTS
+========================== */
+
+.featured{
+
+    background: var(--background-color);
+
+}
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+/* ==========================
 SECTION SPACING
 ========================== */
 
