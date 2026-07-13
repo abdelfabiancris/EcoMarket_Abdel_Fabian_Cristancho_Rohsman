@@ -1,0 +1,71 @@
+/* ===========================
+BOTONES
+=========================== */
+
+.boton{
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background: var(--color-principal);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.boton:hover{
+
+    background: var(--color-secundario);
+
+}
+
+/* ===========================
+TARJETAS
+=========================== */
+
+.producto{
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.producto img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+}
+
+.producto h3{
+
+    margin:20px 0 10px;
+
+}
+
+.producto p{
+
+    margin-bottom:20px;
+
+}

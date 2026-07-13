@@ -1,0 +1,11 @@
+.producto{
+
+    transition:0.3s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-10px);
+
+}

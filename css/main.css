@@ -1,0 +1,63 @@
+/* ===========================
+VARIABLES
+=========================== */
+
+:root{
+
+    --color-principal:#2ecc71;
+    --color-secundario:#27ae60;
+    --color-fondo:#f5f5dc;
+    --color-texto:#333333;
+    --color-blanco:#ffffff;
+
+}
+
+/* ===========================
+RESET
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* ===========================
+ESTILOS GENERALES
+=========================== */
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--color-fondo);
+
+    color: var(--color-texto);
+
+    min-height: 100vh;
+
+}
+
+a{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+img{
+
+    display: block;
+
+    max-width: 100%;
+
+}
