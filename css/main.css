@@ -1,20 +1,30 @@
-/* ===========================
+/* ==========================
+GOOGLE FONTS
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
 VARIABLES
-=========================== */
+========================== */
 
 :root{
 
-    --color-principal:#2ecc71;
-    --color-secundario:#27ae60;
-    --color-fondo:#f5f5dc;
-    --color-texto:#333333;
-    --color-blanco:#ffffff;
+    --primary-color:#2E7D32;
+    --secondary-color:#4CAF50;
+    --background-color:#F8F8F4;
+    --white:#FFFFFF;
+    --black:#222222;
+    --gray:#666666;
+    --light-gray:#EAEAEA;
+
+    --container-width:1200px;
 
 }
 
-/* ===========================
+/* ==========================
 RESET
-=========================== */
+========================== */
 
 *{
 
@@ -24,40 +34,58 @@ RESET
 
 }
 
-/* ===========================
-ESTILOS GENERALES
-=========================== */
+/* ==========================
+GLOBAL
+========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
 
 body{
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Poppins', sans-serif;
 
-    background: var(--color-fondo);
+    background:var(--background-color);
 
-    color: var(--color-texto);
-
-    min-height: 100vh;
-
-}
-
-a{
-
-    text-decoration: none;
-
-    color: inherit;
-
-}
-
-ul{
-
-    list-style: none;
+    color:var(--black);
 
 }
 
 img{
 
-    display: block;
+    display:block;
 
-    max-width: 100%;
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================
+CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:var(--container-width);
+
+    margin:auto;
 
 }

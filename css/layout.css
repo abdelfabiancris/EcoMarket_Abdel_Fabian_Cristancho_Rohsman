@@ -1,8 +1,22 @@
-/* ===========================
+/* ==========================
 HEADER
-=========================== */
+========================== */
 
-header{
+.header{
+
+    background: var(--white);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.header .container{
 
     display: flex;
 
@@ -10,74 +24,121 @@ header{
 
     align-items: center;
 
-    padding: 20px 80px;
+    height: 85px;
 
-    background: var(--color-blanco);
+}
+
+/* ==========================
+LOGO
+========================== */
+
+.logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.logo img{
+
+    width: 35px;
 
 }
 
 .logo h1{
 
-    color: var(--color-principal);
+    font-size: 1.7rem;
 
-    font-size: 2rem;
+    color: var(--primary-color);
 
 }
 
-nav ul{
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar ul{
 
     display: flex;
 
-    gap: 30px;
+    gap: 40px;
 
 }
 
-nav a{
+.navbar a{
 
-    color: var(--color-texto);
+    font-weight: 500;
 
-    font-weight: bold;
-
-    transition: color .3s ease;
+    transition: .3s;
 
 }
 
-nav a:hover{
+.navbar a:hover{
 
-    color: var(--color-principal);
+    color: var(--primary-color);
 
 }
 
-.acciones{
+.navbar .active{
+
+    color: var(--primary-color);
+
+}
+
+/* ==========================
+HEADER ICONS
+========================== */
+
+.header-icons{
 
     display: flex;
+
+    align-items: center;
 
     gap: 20px;
 
 }
 
-.acciones a{
+.header-icons img{
 
-    font-size: 22px;
+    width: 22px;
 
-    transition: color .3s ease;
-
-}
-
-.acciones a:hover{
-
-    color: var(--color-principal);
+    cursor: pointer;
 
 }
 
+/* ==========================
+SHOPPING BAG
+========================== */
 
-/* ===========================
-HERO
-=========================== */
+.cart{
 
-.hero{
+    position: relative;
 
-    height: 80vh;
+}
+
+.cart span{
+
+    position: absolute;
+
+    top: -8px;
+
+    right: -10px;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    font-size: .7rem;
 
     display: flex;
 
@@ -85,10 +146,22 @@ HERO
 
     align-items: center;
 
-    text-align: center;
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
 
     background-image:
-        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("../img/hero/hero.jpg");
 
     background-size: cover;
@@ -99,76 +172,72 @@ HERO
 
 }
 
-.hero-contenido{
+.hero-content{
 
-    max-width: 700px;
+    width: 90%;
 
-    color: var(--color-blanco);
+    max-width: 1200px;
 
-}
+    margin: auto;
 
-.hero-contenido h2{
-
-    font-size: 3rem;
-
-    margin-bottom: 20px;
+    color: var(--white);
 
 }
 
-.hero-contenido p{
+.hero-tag{
 
-    font-size: 1.2rem;
+    display: inline-block;
 
-    margin-bottom: 30px;
+    background: rgba(255,255,255,.15);
 
-    line-height: 1.6;
+    padding: 10px 18px;
 
-}
+    border-radius: 30px;
 
+    margin-bottom: 25px;
 
-/* ===========================
-PRODUCTOS
-=========================== */
-
-.productos{
-
-    padding: 60px 80px;
+    backdrop-filter: blur(5px);
 
 }
 
-.productos h2{
+.hero h2{
 
-    text-align: center;
+    font-size: 4rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+.hero p{
+
+    width: 600px;
+
+    max-width: 100%;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
 
     margin-bottom: 40px;
 
 }
 
-.contenedor-productos{
+.hero-buttons{
 
-    display: grid;
+    display: flex;
 
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 30px;
+    gap: 20px;
 
 }
 
+/* ==========================
+SECTION SPACING
+========================== */
 
-/* ===========================
-FOOTER
-=========================== */
+section{
 
-footer{
-
-    background: var(--color-principal);
-
-    color: var(--color-blanco);
-
-    text-align: center;
-
-    padding: 30px;
-
-    margin-top: 60px;
+    padding: 80px 0;
 
 }

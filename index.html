@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -18,179 +18,141 @@
 
 <body>
 
-    <header>
+    <!-- ==========================
+    HEADER
+    =========================== -->
 
-        <div class="logo">
+    <header class="header">
 
-            <h1>EcoMarket</h1>
+        <div class="container">
 
-        </div>
+            <div class="logo">
 
-        <nav>
+                <img src="img/icons/logo.svg" alt="EcoMarket Logo">
 
-            <ul>
+                <h1>EcoMarket</h1>
 
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="views/productos.html">Productos</a></li>
-                <li><a href="views/sobre-nosotros.html">Nosotros</a></li>
-                <li><a href="views/contacto.html">Contacto</a></li>
+            </div>
 
-            </ul>
+            <nav class="navbar">
 
-        </nav>
+                <ul>
 
-        <div class="acciones">
+                    <li><a href="index.html" class="active">Home</a></li>
 
-            <a href="#">🔍</a>
-            <a href="#">🛒</a>
+                    <li><a href="views/productos.html">Store</a></li>
 
-        </div>
+                    <li><a href="views/sobre-nosotros.html">Our Story</a></li>
 
-    </header>
+                    <li><a href="views/contacto.html">Contact</a></li>
 
-    <main>
+                </ul>
 
-        <!-- Hero -->
+            </nav>
 
-        <section class="hero">
+            <div class="header-icons">
 
-            <div class="hero-contenido">
+                <a href="#" title="Search">
 
-                <h2>Compra responsable, vive sostenible</h2>
+                    <img src="img/icons/search.svg" alt="Search">
 
-                <p>
+                </a>
 
-                    Descubre productos ecológicos que cuidan el planeta y mejoran tu calidad de vida.
+                <a href="#" class="cart" title="Shopping Cart">
 
-                </p>
+                    <img src="img/icons/bag.svg" alt="Shopping Bag">
 
-                <a href="views/productos.html" class="boton">
+                    <span>2</span>
 
-                    Explorar productos
+                </a>
+
+                <a href="#" title="Dark Mode">
+
+                    <img src="img/icons/moon.svg" alt="Dark Mode">
 
                 </a>
 
             </div>
 
-        </section>
+        </div>
 
-        <!-- Productos destacados -->
+    </header>
 
-        <section class="productos">
+    <!-- ==========================
+    MAIN
+    =========================== -->
 
-            <h2>Productos Destacados</h2>
+    <main>
 
-            <div class="contenedor-productos">
+    <!-- ==========================
+    HERO
+    =========================== -->
 
-                <div class="producto">
+    <section class="hero">
 
-                    <img src="img/products/producto1.jpg" alt="Botella reutilizable">
+        <div class="hero-content">
 
-                    <h3>Botella Reutilizable</h3>
+            <span class="hero-tag">
+                Sustainable Living
+            </span>
 
-                    <p>
+            <h2>
+                Nature in Every <br>
+                Purchase
+            </h2>
 
-                        Fabricada en acero inoxidable para reducir el uso de plástico.
+            <p>
+                Discover thoughtfully curated eco-friendly products that help you
+                live greener without compromising quality or style.
+            </p>
 
-                    </p>
+            <div class="hero-buttons">
 
-                    <a href="#" class="boton">Ver más</a>
+                <a href="views/productos.html" class="btn btn-primary">
+                    Shop New Arrivals
+                </a>
 
-                </div>
-
-                <div class="producto">
-
-                    <img src="img/products/producto2.jpg" alt="Cepillo de bambú">
-
-                    <h3>Cepillo de Bambú</h3>
-
-                    <p>
-
-                        Material ecológico y amigable con el medio ambiente.
-
-                    </p>
-
-                    <a href="#" class="boton">Ver más</a>
-
-                </div>
-
-                <div class="producto">
-
-                    <img src="img/products/producto3.jpg" alt="Bolsa ecológica">
-
-                    <h3>Bolsa Ecológica</h3>
-
-                    <p>
-
-                        Ideal para reemplazar bolsas plásticas de un solo uso.
-
-                    </p>
-
-                    <a href="#" class="boton">Ver más</a>
-
-                </div>
-
-                <div class="producto">
-
-                    <img src="img/products/producto4.jpg" alt="Kit de cubiertos">
-
-                    <h3>Kit de Cubiertos</h3>
-
-                    <p>
-
-                        Lleva tus cubiertos reutilizables a cualquier lugar.
-
-                    </p>
-
-                    <a href="#" class="boton">Ver más</a>
-
-                </div>
-
-                <div class="producto">
-
-                    <img src="img/products/producto5.jpg" alt="Maceta reciclada">
-
-                    <h3>Maceta Reciclada</h3>
-
-                    <p>
-
-                        Elaborada con materiales reciclados de alta calidad.
-
-                    </p>
-
-                    <a href="#" class="boton">Ver más</a>
-
-                </div>
-
-                <div class="producto">
-
-                    <img src="img/products/producto6.jpg" alt="Vela Natural">
-
-                    <h3>Vela Natural</h3>
-
-                    <p>
-
-                        Elaborada con cera vegetal y aromas naturales.
-
-                    </p>
-
-                    <a href="#" class="boton">Ver más</a>
-
-                </div>
+                <a href="views/sobre-nosotros.html" class="btn btn-secondary">
+                    Learn Our Impact
+                </a>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
+
+    <!-- ==========================
+    CATEGORIES
+    =========================== -->
+
+    <section class="categories">
+
+    </section>
+
+    <!-- ==========================
+    FEATURED PRODUCTS
+    =========================== -->
+
+    <section class="featured">
+
+    </section>
+
+    <!-- ==========================
+    NEWSLETTER
+    =========================== -->
+
+    <section class="newsletter">
+
+    </section>
+
+</main>
+
+<!-- ==========================
+    FOOTER
+    =========================== -->
 
     <footer>
-
-        <p>© 2026 EcoMarket - Todos los derechos reservados.</p>
-
-        <p>Contacto: contacto@ecomarket.com</p>
-
-        <p>Síguenos en Facebook | Instagram | X</p>
 
     </footer>
 

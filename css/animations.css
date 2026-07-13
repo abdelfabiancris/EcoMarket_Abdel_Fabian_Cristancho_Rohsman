@@ -1,11 +1,33 @@
-.producto{
+/* ===========================
+ANIMACIONES
+=========================== */
 
-    transition:0.3s;
+/* Animación para el contenido del Hero */
+
+.hero-contenido{
+
+    animation: aparecer 1.2s ease;
 
 }
 
-.producto:hover{
+/* Animación de entrada */
 
-    transform:translateY(-10px);
+@keyframes aparecer{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
 
 }
