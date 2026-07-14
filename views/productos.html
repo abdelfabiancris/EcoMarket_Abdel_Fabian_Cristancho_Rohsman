@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Store | EcoMarket</title>
+
+    <!-- ==========================
+    STYLES
+    =========================== -->
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="../css/layout.css">
+
+    <link rel="stylesheet" href="../css/components.css">
+
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body class="store-page">
+
+    <!-- ==========================
+    HEADER
+    ========================== -->
+
+    <header class="store-header">
+
+        <div class="container store-header-content">
+
+            <!-- ==========================
+            LOGO
+            =========================== -->
+
+            <a
+                href="../index.html"
+                class="store-logo"
+            >
+
+                <img
+                    src="../img/icons/logo-blue.svg"
+                    alt="EcoMarket Logo"
+                >
+
+                <h1>
+                    EcoMarket
+                </h1>
+
+            </a>
+
+            <!-- ==========================
+            NAVIGATION
+            =========================== -->
+
+            <nav class="store-navbar">
+
+                <ul>
+
+                    <li>
+
+                        <a href="../index.html">
+                            Home
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a
+                            href="productos.html"
+                            class="store-active"
+                        >
+                            Store
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="sobre-nosotros.html">
+                            Our Story
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contacto.html">
+                            Contact
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- ==========================
+            HEADER ICONS
+            =========================== -->
+
+            <div class="store-header-icons">
+
+                <!-- Search -->
+
+                <a
+                    href="#store-search"
+                    class="store-icon-button"
+                    title="Search"
+                    aria-label="Search products"
+                >
+
+                    <img
+                        src="../img/icons/search.svg"
+                        alt="Search"
+                    >
+
+                </a>
+
+                <!-- Shopping Bag -->
+
+                <a
+                    href="#"
+                    class="store-icon-button store-cart"
+                    title="Shopping Cart"
+                    aria-label="Shopping cart"
+                >
+
+                    <img
+                        src="../img/icons/bag.svg"
+                        alt="Shopping Bag"
+                    >
+
+                    <span>
+                        2
+                    </span>
+
+                </a>
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="store-icon-button"
+                    title="Dark Mode"
+                    aria-label="Dark mode"
+                >
+
+                    <img
+                        src="../img/icons/moon.svg"
+                        alt="Dark Mode"
+                    >
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================
+    MAIN CONTENT
+    =========================== -->
+
+    <main class="store-main">
+
+        <div class="container store-layout">
+
+            <!-- ==========================
+            FILTER SIDEBAR
+            =========================== -->
+
+            <aside class="store-sidebar">
+
+                <!-- Categories -->
+
+                <section class="filter-card">
+
+                    <h2>
+                        Categories
+                    </h2>
+
+                    <div class="category-list">
+
+                        <label class="filter-option">
+
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                All Products
+                            </span>
+
+                        </label>
+
+                        <label class="filter-option">
+
+                            <input type="checkbox">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Home
+                            </span>
+
+                        </label>
+
+                        <label class="filter-option">
+
+                            <input type="checkbox">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Fashion
+                            </span>
+
+                        </label>
+
+                        <label class="filter-option">
+
+                            <input type="checkbox">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Personal Care
+                            </span>
+
+                        </label>
+
+                        <label class="filter-option">
+
+                            <input type="checkbox">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Food
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+                <!-- Price range -->
+
+                <section class="filter-card price-card">
+
+                    <h2>
+                        Price Range
+                    </h2>
+
+                    <div class="price-labels">
+
+                        <span>
+                            $0
+                        </span>
+
+                        <span>
+                            $100+
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="50"
+                        class="price-range"
+                        aria-label="Maximum product price"
+                    >
+
+                    <div class="price-inputs">
+
+                        <div>
+                            $10
+                        </div>
+
+                        <span>
+                            –
+                        </span>
+
+                        <div>
+                            $50
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Availability -->
+
+                <section class="filter-card">
+
+                    <h2>
+                        Availability
+                    </h2>
+
+                    <div class="availability-list">
+
+                        <label class="filter-option">
+
+                            <input type="checkbox">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                In Stock
+                            </span>
+
+                        </label>
+
+                        <label class="filter-option">
+
+                            <input type="checkbox">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Out of Stock
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+                <!-- Product filters -->
+
+                <section class="filter-card">
+
+                    <h2>
+                        Filter By
+                    </h2>
+
+                    <div class="filter-type-list">
+
+                        <label class="filter-type">
+
+                            <input
+                                type="checkbox"
+                                class="filter-type-input"
+                            >
+
+                            <span class="filter-dot biodegradable"></span>
+
+                            <span>
+                                Biodegradable
+                            </span>
+
+                        </label>
+
+                        <label class="filter-type">
+
+                            <input
+                                type="checkbox"
+                                class="filter-type-input"
+                            >
+
+                            <span class="filter-dot plastic-free"></span>
+
+                            <span>
+                                Plastic Free
+                            </span>
+
+                        </label>
+
+                        <label class="filter-type">
+
+                            <input
+                                type="checkbox"
+                                class="filter-type-input"
+                            >
+
+                            <span class="filter-dot organic"></span>
+
+                            <span>
+                                Organic
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+            <!-- ==========================
+            PRODUCT CATALOG
+            =========================== -->
+
+            <section class="store-catalog">
+
+                <!-- Catalog header -->
+
+                <div class="catalog-header">
+
+                    <div class="catalog-title">
+
+                        <h1>
+                            Sustainable Finds
+                        </h1>
+
+                        <p>
+                            Showing 20 eco-friendly products
+                        </p>
+
+                    </div>
+
+                    <div class="catalog-tools">
+
+                        <form
+                            class="store-search"
+                            role="search"
+                        >
+
+                            <img
+                                src="../img/icons/search.svg"
+                                alt=""
+                            >
+
+                            <input
+                                id="store-search"
+                                type="search"
+                                placeholder="Search products..."
+                                aria-label="Search products"
+                            >
+
+                        </form>
+
+                        <button
+                            type="button"
+                            class="filter-menu-button"
+                            aria-label="Open filters"
+                        >
+
+                            <img
+                                src="../img/icons/filters.svg"
+                                alt=""
+                            >
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+    <!-- ==========================
+    PRODUCTS GRID
+    ========================== -->
+
+    <section class="store-products">
+
+        <div class="store-products-grid">
+
+            <!-- ==========================
+            PRODUCT 1
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-new">
+                        New
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Bamboo Toothbrush Set to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product1.jpg"
+                        alt="Bamboo Toothbrush Set"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Personal Care
+                    </span>
+
+                    <h2>
+                        Bamboo Toothbrush Set
+                    </h2>
+
+                    <p class="store-product-description">
+                        Soft bamboo toothbrushes for sustainable daily care.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $18.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Bamboo Toothbrush Set to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 2
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Cotton Mesh Produce Bag to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product2.jpg"
+                        alt="Cotton Mesh Produce Bag"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Home
+                    </span>
+
+                    <h2>
+                        Cotton Mesh Produce Bag
+                    </h2>
+
+                    <p class="store-product-description">
+                        Reusable organic cotton bags for grocery shopping.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $14.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Cotton Mesh Produce Bag to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 3
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-bestseller">
+                        Best Seller
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Glass Water Bottle to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product3.jpg"
+                        alt="Glass Water Bottle"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Kitchen
+                    </span>
+
+                    <h2>
+                        Glass Water Bottle
+                    </h2>
+
+                    <p class="store-product-description">
+                        Elegant reusable bottle with a natural bamboo lid.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $26.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Glass Water Bottle to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 4
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-eco">
+                        Eco
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Natural Beeswax Wraps to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product4.jpg"
+                        alt="Natural Beeswax Wraps"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Kitchen
+                    </span>
+
+                    <h2>
+                        Natural Beeswax Wraps
+                    </h2>
+
+                    <p class="store-product-description">
+                        A natural alternative to disposable plastic wrap.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $22.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Natural Beeswax Wraps to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 5
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-sale">
+                        Sale
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Citrus Shampoo Bar to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product5.jpg"
+                        alt="Citrus Shampoo Bar"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Personal Care
+                    </span>
+
+                    <h2>
+                        Citrus Shampoo Bar
+                    </h2>
+
+                    <p class="store-product-description">
+                        Plastic-free shampoo with a fresh citrus fragrance.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $16.00
+                            </span>
+
+                            <span class="old-price">
+                                $20.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Citrus Shampoo Bar to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 6
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Silicone Storage Set to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product6.jpg"
+                        alt="Silicone Storage Set"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Kitchen
+                    </span>
+
+                    <h2>
+                        Silicone Storage Set
+                    </h2>
+
+                    <p class="store-product-description">
+                        Reusable silicone containers for sustainable food storage.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $29.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Silicone Storage Set to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 7
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-new">
+                        New
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Reusable Bamboo Cutlery to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product7.jpg"
+                        alt="Reusable Bamboo Cutlery"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Kitchen
+                    </span>
+
+                    <h2>
+                        Reusable Bamboo Cutlery
+                    </h2>
+
+                    <p class="store-product-description">
+                        Lightweight bamboo utensils for meals wherever you go.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $12.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Reusable Bamboo Cutlery to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 8
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Organic Cotton Tote Bag to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product8.jpg"
+                        alt="Organic Cotton Tote Bag"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h2>
+                        Organic Cotton Tote Bag
+                    </h2>
+
+                    <p class="store-product-description">
+                        Durable organic cotton tote for shopping and everyday use.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $19.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Organic Cotton Tote Bag to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 9
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-bestseller">
+                        Best Seller
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Stainless Steel Straw Set to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product9.jpg"
+                        alt="Stainless Steel Straw Set"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Kitchen
+                    </span>
+
+                    <h2>
+                        Stainless Steel Straw Set
+                    </h2>
+
+                    <p class="store-product-description">
+                        Reusable metal straws with a practical cleaning brush.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $10.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Stainless Steel Straw Set to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 10
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Natural Coconut Bowl to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product10.jpg"
+                        alt="Natural Coconut Bowl"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Home
+                    </span>
+
+                    <h2>
+                        Natural Coconut Bowl
+                    </h2>
+
+                    <p class="store-product-description">
+                        Handcrafted coconut bowl for healthy meals and snacks.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $15.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Natural Coconut Bowl to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 11
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Recycled Paper Notebook to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product11.jpg"
+                        alt="Recycled Paper Notebook"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Home
+                    </span>
+
+                    <h2>
+                        Recycled Paper Notebook
+                    </h2>
+
+                    <p class="store-product-description">
+                        Eco-friendly notebook made with recycled paper.
+                    </p>
+
+                    <span class="stock-status low-stock">
+                        Low Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $11.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Recycled Paper Notebook to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 12
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-sale">
+                        Sale
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Organic Cotton T-Shirt to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product12.jpg"
+                        alt="Organic Cotton T-Shirt"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h2>
+                        Organic Cotton T-Shirt
+                    </h2>
+
+                    <p class="store-product-description">
+                        Comfortable everyday shirt made with organic cotton.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $24.00
+                            </span>
+
+                            <span class="old-price">
+                                $30.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Organic Cotton T-Shirt to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 13
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Wooden Hair Brush to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product13.jpg"
+                        alt="Wooden Hair Brush"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Personal Care
+                    </span>
+
+                    <h2>
+                        Wooden Hair Brush
+                    </h2>
+
+                    <p class="store-product-description">
+                        Natural wooden brush for gentle everyday hair care.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $17.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Wooden Hair Brush to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 14
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-new">
+                        New
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Cork Yoga Mat to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product14.jpg"
+                        alt="Cork Yoga Mat"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Fitness
+                    </span>
+
+                    <h2>
+                        Cork Yoga Mat
+                    </h2>
+
+                    <p class="store-product-description">
+                        Natural cork mat with a comfortable non-slip surface.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $42.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Cork Yoga Mat to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 15
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-eco">
+                        Eco
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Natural Laundry Detergent to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product15.jpg"
+                        alt="Natural Laundry Detergent"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Home
+                    </span>
+
+                    <h2>
+                        Natural Laundry Detergent
+                    </h2>
+
+                    <p class="store-product-description">
+                        Plant-based detergent for naturally clean clothes.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $21.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Natural Laundry Detergent to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 16
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Reusable Coffee Cup to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product16.jpg"
+                        alt="Reusable Coffee Cup"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Kitchen
+                    </span>
+
+                    <h2>
+                        Reusable Coffee Cup
+                    </h2>
+
+                    <p class="store-product-description">
+                        Lightweight reusable cup designed for drinks on the go.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $20.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Reusable Coffee Cup to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 17
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-bestseller">
+                        Best Seller
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Natural Soap Collection to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product17.jpg"
+                        alt="Natural Soap Collection"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Personal Care
+                    </span>
+
+                    <h2>
+                        Natural Soap Collection
+                    </h2>
+
+                    <p class="store-product-description">
+                        Handmade natural soaps with plant-based ingredients.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $23.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Natural Soap Collection to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 18
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Linen Kitchen Towels to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product18.jpg"
+                        alt="Linen Kitchen Towels"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Home
+                    </span>
+
+                    <h2>
+                        Linen Kitchen Towels
+                    </h2>
+
+                    <p class="store-product-description">
+                        Soft and absorbent linen towels for a sustainable kitchen.
+                    </p>
+
+                    <span class="stock-status low-stock">
+                        Low Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $18.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Linen Kitchen Towels to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 19
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <span class="product-badge badge-sale">
+                        Sale
+                    </span>
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Eco-Friendly Backpack to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product19.jpg"
+                        alt="Eco-Friendly Backpack"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Fashion
+                    </span>
+
+                    <h2>
+                        Eco-Friendly Backpack
+                    </h2>
+
+                    <p class="store-product-description">
+                        Durable everyday backpack made from recycled materials.
+                    </p>
+
+                    <span class="stock-status">
+                        In Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $45.00
+                            </span>
+
+                            <span class="old-price">
+                                $55.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Add Eco-Friendly Backpack to cart"
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+            PRODUCT 20
+            =========================== -->
+
+            <article class="store-product-card">
+
+                <div class="store-product-image">
+
+                    <button
+                        class="store-favorite-button"
+                        type="button"
+                        aria-label="Add Bamboo Storage Box to favorites"
+                    >
+
+                        <img
+                            src="../img/icons/heart.svg"
+                            alt=""
+                        >
+
+                    </button>
+
+                    <img
+                        src="../img/products/product20.jpg"
+                        alt="Bamboo Storage Box"
+                    >
+
+                </div>
+
+                <div class="store-product-info">
+
+                    <span class="product-category">
+                        Home
+                    </span>
+
+                    <h2>
+                        Bamboo Storage Box
+                    </h2>
+
+                    <p class="store-product-description">
+                        Natural bamboo organizer for a clean and sustainable home.
+                    </p>
+
+                    <span class="stock-status out-of-stock">
+                        Out of Stock
+                    </span>
+
+                    <div class="store-product-bottom">
+
+                        <div class="store-product-price">
+
+                            <span class="current-price">
+                                $32.00
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="store-add-button"
+                            type="button"
+                            aria-label="Bamboo Storage Box is out of stock"
+                            disabled
+                        >
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    <!-- ==========================
+    PAGINATION
+    =========================== -->
+
+    <nav
+        class="store-pagination"
+        aria-label="Product pages"
+    >
+
+        <a
+            href="#"
+            class="pagination-arrow"
+        >
+            ← Previous
+        </a>
+
+        <a
+            href="#"
+            class="pagination-number active-page"
+        >
+            1
+        </a>
+
+        <a
+            href="#"
+            class="pagination-number"
+        >
+            2
+        </a>
+
+        <a
+            href="#"
+            class="pagination-number"
+        >
+            3
+        </a>
+
+        <a
+            href="#"
+            class="pagination-number"
+        >
+            4
+        </a>
+
+        <a
+            href="#"
+            class="pagination-arrow"
+        >
+            Next →
+        </a>
+
+    </nav>
+
+</section>
+
+</div>
+
+</main>
+
+    <!-- ==========================
+    FOOTER
+    =========================== -->
+
+    <footer class="store-footer">
+
+        <div class="container">
+
+            <div class="store-footer-content">
+
+                <!-- Brand -->
+
+                <div class="store-footer-brand">
+
+                    <a
+                        href="../index.html"
+                        class="store-footer-logo"
+                    >
+
+                        <img
+                            src="../img/icons/logo-blue.svg"
+                            alt="EcoMarket Logo"
+                        >
+
+                        <span>
+                            EcoMarket
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Ethical shopping for conscious consumers.
+                        Small steps, giant leaps.
+                    </p>
+
+                </div>
+
+                <!-- Shop links -->
+
+                <div class="store-footer-column">
+
+                    <h2>
+                        Shop
+                    </h2>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="productos.html">
+                                All Products
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                New Arrivals
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                Best Sellers
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Company links -->
+
+                <div class="store-footer-column">
+
+                    <h2>
+                        Company
+                    </h2>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="sobre-nosotros.html">
+                                Our Mission
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                Sustainability
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="contacto.html">
+                                Contact Us
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Newsletter -->
+
+                <div class="store-footer-newsletter">
+
+                    <h2>
+                        Stay in the Loop
+                    </h2>
+
+                    <form>
+
+                        <input
+                            type="email"
+                            placeholder="Your email"
+                            aria-label="Your email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            aria-label="Subscribe"
+                        >
+                            →
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="store-footer-bottom">
+
+                <p>
+                    © 2026 EcoMarket Inc. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

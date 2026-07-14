@@ -520,3 +520,804 @@ NEWSLETTER BUTTON
 
 }
 
+/* ==================================================
+STORE COMPONENTS
+================================================== */
+
+
+/* ==========================
+FILTER OPTIONS
+========================== */
+
+.filter-option{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #697286;
+
+    font-size: .9rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.filter-option:hover{
+
+    color: #2457d6;
+
+}
+
+
+/* ==========================
+CUSTOM CHECKBOX
+========================== */
+
+.filter-option input{
+
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+.custom-checkbox{
+
+    position: relative;
+
+    width: 18px;
+
+    height: 18px;
+
+    flex-shrink: 0;
+
+    border: 1.5px solid #c9ced8;
+
+    border-radius: 5px;
+
+    background: var(--white);
+
+    transition: .3s;
+
+}
+
+.filter-option input:checked + .custom-checkbox{
+
+    border-color: #2457d6;
+
+    background: #2457d6;
+
+}
+
+.filter-option input:checked + .custom-checkbox::after{
+
+    content: "";
+
+    position: absolute;
+
+    top: 3px;
+
+    left: 6px;
+
+    width: 4px;
+
+    height: 8px;
+
+    border: solid var(--white);
+
+    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+
+}
+
+
+/* ==========================
+FILTER COUNTER
+========================== */
+
+.filter-count{
+
+    margin-left: auto;
+
+    color: #a0a6b2;
+
+    font-size: .78rem;
+
+}
+
+
+/* ==========================
+PRICE RANGE
+========================== */
+
+.price-card{
+
+    padding: 27px 25px;
+
+}
+
+
+/* ==========================
+PRICE LABELS
+========================== */
+
+.price-labels{
+
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #697286;
+
+    font-size: .82rem;
+
+}
+
+
+/* ==========================
+PRICE SLIDER
+========================== */
+
+.price-range{
+
+    width: 100%;
+
+    height: 5px;
+
+    display: block;
+
+    margin: 0;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    border: none;
+
+    border-radius: 20px;
+
+    outline: none;
+
+    background: linear-gradient(
+        to right,
+        #2457d6 0%,
+        #2457d6 50%,
+        #e1e4e9 50%,
+        #e1e4e9 100%
+    );
+
+    cursor: pointer;
+
+}
+
+
+/* ==========================
+PRICE SLIDER CIRCLE
+========================== */
+
+.price-range::-webkit-slider-thumb{
+
+    width: 16px;
+
+    height: 16px;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2457d6;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 7px rgba(36,87,214,.30);
+
+}
+
+.price-range::-moz-range-thumb{
+
+    width: 16px;
+
+    height: 16px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2457d6;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 7px rgba(36,87,214,.30);
+
+}
+
+
+/* ==========================
+PRICE BOXES
+========================== */
+
+.price-inputs{
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.price-inputs div{
+
+    min-width: 0;
+
+    height: 40px;
+
+    padding: 0 10px;
+
+    border: 1px solid #dfe3ea;
+
+    border-radius: 8px;
+
+    background: #f8f9fb;
+
+    color: #596377;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: .82rem;
+
+}
+
+.price-inputs span{
+
+    color: #a0a6b2;
+
+    font-size: .9rem;
+
+}
+
+
+/* ==========================
+STORE PRODUCT IMAGE
+========================== */
+
+.store-product-image{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 250px;
+
+    overflow: hidden;
+
+}
+
+.store-product-image > img{
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* ==========================
+STORE FAVORITE BUTTON
+========================== */
+
+.store-favorite-button{
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 14px;
+
+    width: 38px;
+
+    height: 38px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(235, 238, 238, .95);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+.store-favorite-button img{
+
+    width: 19px;
+
+    height: 19px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+/* FAVORITE HOVER */
+
+.store-favorite-button:hover{
+
+    background: #dfe4e3;
+
+    transform: scale(1.08);
+
+}
+
+
+/* FAVORITE ACTIVE */
+
+.store-favorite-button:active{
+
+    background: var(--primary-color);
+
+}
+
+.store-favorite-button:active img{
+
+    filter: brightness(0) invert(1);
+
+}
+
+
+/* ==========================
+PRODUCT BADGES
+========================== */
+
+.product-badge{
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    z-index: 4;
+
+    padding: 6px 11px;
+
+    border-radius: 50px;
+
+    color: var(--white);
+
+    font-size: .66rem;
+
+    font-weight: 700;
+
+    letter-spacing: .4px;
+
+    text-transform: uppercase;
+
+}
+
+.badge-new{
+
+    background: #2457d6;
+
+}
+
+.badge-sale{
+
+    background: #ec5966;
+
+}
+
+.badge-bestseller{
+
+    background: #f0a83b;
+
+}
+
+.badge-eco{
+
+    background: #34a96b;
+
+}
+
+
+/* ==========================
+STORE PRODUCT INFORMATION
+========================== */
+
+.store-product-info{
+
+    flex: 1;
+
+    padding: 18px 18px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.product-category{
+
+    margin-bottom: 7px;
+
+    color: #9198a7;
+
+    font-size: .67rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+.store-product-info h2{
+
+    min-height: 44px;
+
+    margin-bottom: 8px;
+
+    color: #222b3c;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1rem;
+
+    line-height: 1.35;
+
+}
+
+.store-product-description{
+
+    min-height: 39px;
+
+    margin-bottom: 14px;
+
+    color: #7a8291;
+
+    font-size: .76rem;
+
+    line-height: 1.55;
+
+}
+
+
+/* ==========================
+STORE PRODUCT BOTTOM
+========================== */
+
+.store-product-bottom{
+
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+/* ==========================
+PRODUCT PRICE
+========================== */
+
+.store-product-price{
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+.current-price{
+
+    color: #000000;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+}
+
+.old-price{
+
+    color: #a8adb7;
+
+    font-size: .78rem;
+
+    text-decoration: line-through;
+
+}
+
+
+/* ==========================
+STOCK STATUS
+========================== */
+
+.stock-status{
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #39a96b;
+
+    font-size: .72rem;
+
+    font-weight: 600;
+
+}
+
+.stock-status::before{
+
+    content: "";
+
+    width: 7px;
+
+    height: 7px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: currentColor;
+
+}
+
+.low-stock{
+
+    color: #e49b2f;
+
+}
+
+.out-of-stock{
+
+    color: #dc5965;
+
+}
+
+/* ==========================
+STORE PRODUCT BOTTOM
+========================== */
+
+.store-product-bottom{
+
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+/* ==========================
+PRODUCT PRICE
+========================== */
+
+.store-product-price{
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+/* ==========================
+STORE ADD BUTTON
+========================== */
+
+.store-add-button{
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2457d6;
+
+    color: var(--white);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 1.5rem;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(36, 87, 214, .25);
+
+    transition: .3s;
+
+}
+
+
+/* ==========================
+STORE ADD BUTTON HOVER
+========================== */
+
+.store-add-button:hover{
+
+    background: #1747bd;
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================
+STORE ADD BUTTON ACTIVE
+========================== */
+
+.store-add-button:active{
+
+    transform: scale(.95);
+
+}
+
+
+/* ==========================
+DISABLED PRODUCT BUTTON
+========================== */
+
+.store-add-button:disabled,
+.store-add-button.disabled{
+
+    background: #e5e7eb;
+
+    color: #9299a6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+.store-add-button:disabled img,
+.store-add-button.disabled img{
+
+    opacity: .5;
+
+    filter: none;
+
+}
+
+
+/* ==========================
+STORE CARD RESPONSIVE
+========================== */
+
+@media (max-width: 1200px){
+
+    .store-product-image{
+
+        height: 225px;
+
+    }
+
+}
+
+
+@media (max-width: 992px){
+
+    .store-product-image{
+
+        height: 270px;
+
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    .store-product-image{
+
+        height: 360px;
+
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .store-product-image{
+
+        height: 280px;
+
+    }
+
+}
+

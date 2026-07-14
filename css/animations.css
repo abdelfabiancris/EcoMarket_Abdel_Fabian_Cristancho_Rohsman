@@ -69,3 +69,339 @@ KEYFRAMES
     }
 
 }
+
+/* ==================================================
+STORE ANIMATIONS
+================================================== */
+
+
+/* ==========================
+CATALOG ENTRANCE
+========================== */
+
+.catalog-header{
+
+    animation: storeAppear .7s ease both;
+
+}
+
+
+/* ==========================
+SIDEBAR ENTRANCE
+========================== */
+
+.store-sidebar{
+
+    animation: storeSlideLeft .8s ease both;
+
+}
+
+
+/* ==========================
+PRODUCT CARD ENTRANCE
+========================== */
+
+.store-product-card{
+
+    animation: storeAppear .7s ease both;
+
+}
+
+
+/* Retraso progresivo para las tarjetas */
+
+.store-product-card:nth-child(1){
+
+    animation-delay: .05s;
+
+}
+
+.store-product-card:nth-child(2){
+
+    animation-delay: .10s;
+
+}
+
+.store-product-card:nth-child(3){
+
+    animation-delay: .15s;
+
+}
+
+.store-product-card:nth-child(4){
+
+    animation-delay: .20s;
+
+}
+
+.store-product-card:nth-child(5){
+
+    animation-delay: .25s;
+
+}
+
+.store-product-card:nth-child(6){
+
+    animation-delay: .30s;
+
+}
+
+.store-product-card:nth-child(7){
+
+    animation-delay: .35s;
+
+}
+
+.store-product-card:nth-child(8){
+
+    animation-delay: .40s;
+
+}
+
+.store-product-card:nth-child(9){
+
+    animation-delay: .45s;
+
+}
+
+.store-product-card:nth-child(10){
+
+    animation-delay: .50s;
+
+}
+
+.store-product-card:nth-child(11){
+
+    animation-delay: .55s;
+
+}
+
+.store-product-card:nth-child(12){
+
+    animation-delay: .60s;
+
+}
+
+.store-product-card:nth-child(13){
+
+    animation-delay: .65s;
+
+}
+
+.store-product-card:nth-child(14){
+
+    animation-delay: .70s;
+
+}
+
+.store-product-card:nth-child(15){
+
+    animation-delay: .75s;
+
+}
+
+.store-product-card:nth-child(16){
+
+    animation-delay: .80s;
+
+}
+
+.store-product-card:nth-child(17){
+
+    animation-delay: .85s;
+
+}
+
+.store-product-card:nth-child(18){
+
+    animation-delay: .90s;
+
+}
+
+.store-product-card:nth-child(19){
+
+    animation-delay: .95s;
+
+}
+
+.store-product-card:nth-child(20){
+
+    animation-delay: 1s;
+
+}
+
+
+/* ==========================
+PRODUCT IMAGE HOVER
+========================== */
+
+.store-product-image > img{
+
+    transition:
+
+        transform .5s ease,
+
+        filter .5s ease;
+
+}
+
+.store-product-card:hover .store-product-image > img{
+
+    transform: scale(1.05);
+
+    filter: brightness(.96);
+
+}
+
+
+/* ==========================
+FAVORITE INTERACTION
+========================== */
+
+.store-favorite{
+
+    transition:
+
+        background .3s ease,
+
+        transform .3s ease,
+
+        box-shadow .3s ease;
+
+}
+
+.store-favorite:hover{
+
+    transform: scale(1.1);
+
+    box-shadow: 0 8px 18px rgba(36,87,214,.20);
+
+}
+
+.store-favorite:active{
+
+    transform: scale(.92);
+
+}
+
+
+/* ==========================
+FILTER INTERACTION
+========================== */
+
+.filter-option{
+
+    transition:
+
+        color .3s ease,
+
+        transform .3s ease;
+
+}
+
+.filter-option:hover{
+
+    transform: translateX(3px);
+
+}
+
+
+/* ==========================
+PAGINATION INTERACTION
+========================== */
+
+.pagination-number,
+.pagination-control{
+
+    transition:
+
+        color .3s ease,
+
+        border-color .3s ease,
+
+        background .3s ease,
+
+        transform .3s ease;
+
+}
+
+.pagination-number:hover,
+.pagination-control:hover{
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==========================
+STORE KEYFRAMES
+========================== */
+
+@keyframes storeAppear{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes storeSlideLeft{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateX(-25px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+/* ==========================
+REDUCED MOTION
+========================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    .catalog-header,
+    .store-sidebar,
+    .store-product-card{
+
+        animation: none;
+
+    }
+
+    .store-product-card,
+    .store-product-image > img,
+    .store-favorite,
+    .filter-option,
+    .pagination-number,
+    .pagination-control{
+
+        transition: none;
+
+    }
+
+}
