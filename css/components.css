@@ -6,7 +6,7 @@ BUTTONS
 
     display:inline-block;
 
-    padding:14px 28px;
+    padding:15px 32px;
 
     border-radius:50px;
 
@@ -16,9 +16,29 @@ BUTTONS
 
     transition:.3s;
 
+    border:none;
+
+    cursor:pointer;
+
 }
 
 .btn-primary{
+
+    background: var(--white);
+
+    color: var(--gray);
+
+    border: 1px solid var(--light-gray);
+
+}
+
+.btn-primary img{
+
+    filter:none;
+
+}
+
+.btn-primary:hover{
 
     background: var(--primary-color);
 
@@ -26,23 +46,31 @@ BUTTONS
 
 }
 
-.btn-primary:hover{
+.btn-primary:hover img{
 
-    background: var(--secondary-color);
+    filter: brightness(0) invert(1);
 
 }
 
 .btn-secondary{
 
-    background: var(--white);
+    background: rgba(255,255,255,.15);
 
-    color: var(--black);
+    color: var(--white);
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    backdrop-filter: blur(6px);
+
+    -webkit-backdrop-filter: blur(6px);
 
 }
 
 .btn-secondary:hover{
 
-    background: var(--light-gray);
+    background: rgba(255,255,255,.25);
+
+    border-color: rgba(255,255,255,.4);
 
 }
 
@@ -52,11 +80,15 @@ HERO TAG
 
 .hero-tag{
 
-    font-size: .9rem;
+    display:inline-block;
 
-    font-weight: 600;
+    font-size:.9rem;
 
-    letter-spacing: 1px;
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
 
 }
 
@@ -66,21 +98,19 @@ SECTION TITLES
 
 .section-title{
 
-    text-align: center;
+    font-size:2.5rem;
 
-    font-size: 2.3rem;
+    font-weight:700;
 
-    margin-bottom: 20px;
+    margin-bottom:15px;
 
 }
 
 .section-subtitle{
 
-    text-align: center;
+    color:var(--gray);
 
-    color: var(--gray);
-
-    margin-bottom: 60px;
+    line-height:1.7;
 
 }
 
@@ -90,19 +120,29 @@ PRODUCT CARD
 
 .product-card{
 
+    position: relative;
+
     background: var(--white);
 
-    border-radius:18px;
+    border-radius: 22px;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
 
-    transition:.35s;
+    transition: .35s;
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.14);
 
 }
 
@@ -110,7 +150,7 @@ PRODUCT CARD
 
     width:100%;
 
-    height:260px;
+    height:280px;
 
     object-fit:cover;
 
@@ -118,35 +158,99 @@ PRODUCT CARD
 
 .product-info{
 
-    padding:25px;
+    padding:28px;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:15px;
-
 }
 
 .product-info h3{
 
-    margin-bottom: 12px;
+    font-size:1.25rem;
+
+    margin-bottom:15px;
 
 }
 
 .product-info p{
 
-    color: var(--gray);
+    color:var(--gray);
+
+    line-height:1.7;
+
+    margin-bottom:22px;
 
 }
 
 .product-price{
 
-    font-weight: bold;
+    font-size:1.35rem;
 
-    color: var(--primary-color);
+    font-weight:700;
 
-    margin: 18px 0;
+    color:var(--primary-color);
+
+    margin-bottom:25px;
+
+}
+
+.product-btn{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+/* ==========================
+PRODUCT BUTTON
+========================== */
+
+.product-btn{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+}
+
+.product-btn img{
+
+    width:18px;
+
+    height:18px;
+
+    transition:.3s;
+
+}
+
+.product-btn:hover{
+
+    color:var(--white);
+
+}
+
+.product-btn:hover img{
+
+    transform:translateX(3px);
+
+    filter:brightness(0) invert(1);
 
 }
 
@@ -156,23 +260,27 @@ CATEGORIES
 
 .category-buttons{
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: flex-start;
 
-    gap:20px;
+    align-items: center;
 
-    flex-wrap:wrap;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
 
 }
 
 .category-btn{
 
-    padding:12px 24px;
+    padding:13px 26px;
 
     border:none;
 
-    border-radius:30px;
+    border-radius:40px;
 
     background:var(--white);
 
@@ -182,7 +290,11 @@ CATEGORIES
 
     font-size:1rem;
 
+    font-weight:500;
+
     transition:.3s;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
 
 }
 
@@ -202,11 +314,209 @@ CATEGORIES
 
 }
 
-.product-card:hover{
+/* ==========================
+FEATURED HEADER
+========================== */
 
-    transform:translateY(-10px);
+.featured-header .section-title{
 
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    margin-bottom:10px;
+
+}
+
+.featured-header .section-subtitle{
+
+    margin-bottom:0;
+
+}
+
+.view-all{
+
+    font-weight:600;
+
+    color:var(--primary-color);
+
+    transition:.3s;
+
+}
+
+.view-all:hover{
+
+    color:var(--secondary-color);
+
+}
+
+/* ==========================
+NEWSLETTER
+========================== */
+
+.newsletter-text h2{
+
+    font-size: 3.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+
+}
+
+.newsletter-text p{
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.9);
+
+    margin-bottom: 35px;
+
+}
+
+.newsletter-form input{
+
+    background: var(--white);
+
+    color: var(--black);
+
+    border: none;
+
+    border-radius: 50px;
+
+    font-size: 1rem;
+
+    padding: 0 28px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.newsletter-form input::placeholder{
+
+    color: #9b9b9b;
+
+}
+
+.newsletter-form button{
+
+    height: 60px;
+
+    padding: 0 34px;
+
+    border-radius: 50px;
+
+    background: var(--white);
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.newsletter-form button:hover{
+
+    background: #f3f3f3;
+
+    transform: translateY(-2px);
+
+}
+
+.newsletter-text small{
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: .9rem;
+
+    color: rgba(255,255,255,.75);
+
+}
+
+/* ==========================
+FAVORITE BUTTON
+========================== */
+
+.favorite-btn{
+
+    position: absolute;
+
+    top: 16px;
+
+    right: 16px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.95);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.10);
+
+    transition: .3s;
+
+    z-index: 5;
+
+}
+
+.favorite-btn img{
+
+    width: 20px;
+
+    height: 20px;
+
+    transition: .3s;
+
+}
+
+.favorite-btn:hover{
+
+    background: var(--primary-color);
+
+    transform: scale(1.08);
+
+}
+
+.favorite-btn:hover img{
+
+    filter: brightness(0) invert(1);
+
+}
+
+/* ==========================
+NEWSLETTER BUTTON
+========================== */
+
+.newsletter-btn{
+
+    background: var(--white);
+
+    color: var(--primary-color);
+
+    border: none;
+
+}
+
+.newsletter-btn:hover{
+
+    background: #f2f2f2;
+
+    color: var(--primary-color);
 
 }
 

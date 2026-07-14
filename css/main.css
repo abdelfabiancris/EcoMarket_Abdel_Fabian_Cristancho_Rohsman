@@ -10,15 +10,18 @@ VARIABLES
 
 :root{
 
-    --primary-color:#2E7D32;
-    --secondary-color:#4CAF50;
-    --background-color:#F8F8F4;
+    --primary-color:#34c97a;
+    --secondary-color:#34c97a;
+
+    --background-color:#F8F7F2;
+
     --white:#FFFFFF;
-    --black:#222222;
+    --black:#1F1F1F;
+
     --gray:#666666;
     --light-gray:#EAEAEA;
 
-    --container-width:1200px;
+    --container-width:1280px;
 
 }
 
@@ -52,6 +55,8 @@ body{
 
     color:var(--black);
 
+    line-height:1.6;
+
 }
 
 img{
@@ -76,13 +81,19 @@ ul{
 
 }
 
+button{
+
+    font-family:inherit;
+
+}
+
 /* ==========================
 CONTAINER
 ========================== */
 
 .container{
 
-    width:90%;
+    width:92%;
 
     max-width:var(--container-width);
 

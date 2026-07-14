@@ -1,16 +1,54 @@
-/* ===========================
+/* ==========================
 ANIMACIONES
-=========================== */
+========================== */
 
-/* Animación para el contenido del Hero */
+/* Animación del Hero */
 
-.hero-contenido{
+.hero-content{
 
     animation: aparecer 1.2s ease;
 
 }
 
-/* Animación de entrada */
+/* Animación de las tarjetas */
+
+.product-card{
+
+    animation: aparecer .8s ease;
+
+}
+
+/* Animación de botones */
+
+.btn{
+
+    transition: .3s;
+
+}
+
+.btn:hover{
+
+    transform: translateY(-2px);
+
+}
+
+/* Animación de categorías */
+
+.category-btn{
+
+    transition: .3s;
+
+}
+
+.category-btn:hover{
+
+    transform: scale(1.05);
+
+}
+
+/* ==========================
+KEYFRAMES
+========================== */
 
 @keyframes aparecer{
 
