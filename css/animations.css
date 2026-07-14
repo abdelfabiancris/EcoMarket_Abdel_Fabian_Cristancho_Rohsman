@@ -405,3 +405,265 @@ REDUCED MOTION
     }
 
 }
+
+/* ==================================================
+ABOUT ANIMATIONS
+================================================== */
+
+
+/* ==========================
+ABOUT HERO ANIMATION
+========================== */
+
+.about-hero-content{
+
+    animation: aboutFadeUp 1s ease both;
+
+}
+
+.about-hero-label{
+
+    animation: aboutFadeDown .8s ease both;
+
+}
+
+.about-hero-title{
+
+    animation: aboutFadeUp 1s ease .15s both;
+
+}
+
+.about-hero-description{
+
+    animation: aboutFadeUp 1s ease .3s both;
+
+}
+
+.about-hero-button{
+
+    animation: aboutFadeUp 1s ease .45s both;
+
+}
+
+
+/* ==========================
+PRINCIPLES ANIMATION
+========================== */
+
+.principle-item{
+
+    animation: aboutFadeUp .8s ease both;
+
+}
+
+.principle-item:nth-child(1){
+
+    animation-delay: .1s;
+
+}
+
+.principle-item:nth-child(2){
+
+    animation-delay: .2s;
+
+}
+
+.principle-item:nth-child(3){
+
+    animation-delay: .3s;
+
+}
+
+.principle-item:nth-child(4){
+
+    animation-delay: .4s;
+
+}
+
+
+/* ==========================
+MISSION ANIMATION
+========================== */
+
+.mission-image{
+
+    animation: aboutFadeRight 1s ease both;
+
+}
+
+.mission-text{
+
+    animation: aboutFadeLeft 1s ease both;
+
+}
+
+
+/* ==========================
+COMMITMENT ANIMATION
+========================== */
+
+.commitment-text{
+
+    animation: aboutFadeRight 1s ease both;
+
+}
+
+.commitment-image{
+
+    animation: aboutFadeLeft 1s ease both;
+
+}
+
+
+/* ==========================
+TESTIMONIAL ANIMATION
+========================== */
+
+.testimonial-card{
+
+    animation: aboutFadeUp .9s ease both;
+
+}
+
+.testimonial-card:nth-child(1){
+
+    animation-delay: .1s;
+
+}
+
+.testimonial-card:nth-child(2){
+
+    animation-delay: .25s;
+
+}
+
+.testimonial-card:nth-child(3){
+
+    animation-delay: .4s;
+
+}
+
+
+/* ==========================
+ABOUT CTA ANIMATION
+========================== */
+
+.about-cta-content{
+
+    animation: aboutFadeUp 1s ease both;
+
+}
+
+
+/* ==========================
+ABOUT KEYFRAMES
+========================== */
+
+@keyframes aboutFadeUp{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(35px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes aboutFadeDown{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes aboutFadeRight{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateX(-45px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+@keyframes aboutFadeLeft{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateX(45px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+/* ==========================
+ACCESSIBILITY
+========================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    .about-hero-content,
+    .about-hero-label,
+    .about-hero-title,
+    .about-hero-description,
+    .about-hero-button,
+    .principle-item,
+    .mission-image,
+    .mission-text,
+    .commitment-text,
+    .commitment-image,
+    .testimonial-card,
+    .about-cta-content{
+
+        animation: none;
+
+    }
+
+}

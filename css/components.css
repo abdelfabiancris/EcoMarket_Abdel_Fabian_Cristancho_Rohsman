@@ -1321,3 +1321,594 @@ STORE CARD RESPONSIVE
 
 }
 
+/* ==================================================
+ABOUT COMPONENTS
+================================================== */
+
+
+/* ==========================
+ABOUT HERO BUTTON
+========================== */
+
+.about-hero-button{
+
+    min-width: 155px;
+
+    min-height: 52px;
+
+    padding: 0 25px;
+
+    border-radius: 50px;
+
+    background: var(--white);
+
+    color: #20293a;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: .84rem;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.16);
+
+    transition: .3s;
+
+}
+
+.about-hero-button:hover{
+
+    background: #2478ff;
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.22);
+
+}
+
+.about-hero-button span:last-child{
+
+    font-size: 1rem;
+
+    transition: .3s;
+
+}
+
+.about-hero-button:hover span:last-child{
+
+    transform: translateY(3px);
+
+}
+
+
+/* ==========================
+PRINCIPLE ICONS
+========================== */
+
+.principle-icon{
+
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+.principle-icon img{
+
+    width: 20px;
+
+    height: 20px;
+
+    object-fit: contain;
+
+}
+
+.principle-icon-blue{
+
+    background: #dfeaff;
+
+    color: #2478ff;
+
+}
+
+.principle-icon-purple{
+
+    background: #ebe5ff;
+
+    color: #6f56d9;
+
+}
+
+.principle-icon-green{
+
+    background: #dff8e8;
+
+    color: #22ae62;
+
+}
+
+.principle-icon-aqua{
+
+    background: #dff8f5;
+
+    color: #20aaa1;
+
+}
+
+.principle-item{
+
+    transition: .35s;
+
+}
+
+.principle-item:hover{
+
+    transform: translateY(-7px);
+
+}
+
+.principle-item:hover .principle-icon{
+
+    transform: scale(1.12);
+
+    box-shadow: 0 8px 20px rgba(31,43,60,.10);
+
+}
+
+
+/* ==========================
+ABOUT SECTION LABELS
+========================== */
+
+.about-section-label{
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 27px;
+
+    padding: 5px 13px;
+
+    border-radius: 50px;
+
+    font-size: .68rem;
+
+    font-weight: 700;
+
+    letter-spacing: .7px;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+}
+
+.mission-label{
+
+    background: #dfeaff;
+
+    color: #2478ff;
+
+}
+
+.commitment-label{
+
+    background: #dcf7e5;
+
+    color: #269f59;
+
+}
+
+
+/* ==========================
+ABOUT TEXT LINKS
+========================== */
+
+.about-text-link{
+
+    color: #2478ff;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.about-text-link span{
+
+    transition: .3s;
+
+}
+
+.about-text-link:hover{
+
+    color: #155dcc;
+
+}
+
+.about-text-link:hover span{
+
+    transform: translateX(5px);
+
+}
+
+
+/* ==========================
+COMMITMENT CHECKS
+========================== */
+
+.commitment-check{
+
+    width: 16px;
+
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #2ecc71;
+
+    color: var(--white);
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: .58rem;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================
+TESTIMONIAL CARDS
+========================== */
+
+.testimonial-card{
+
+    min-height: 290px;
+
+    padding: 32px;
+
+    border: 1px solid #e4e8ed;
+
+    border-radius: 15px;
+
+    background: var(--white);
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow: 0 3px 10px rgba(31,43,60,.03);
+
+    transition: .35s;
+
+}
+
+.testimonial-card:hover{
+
+    border-color: rgba(36,120,255,.25);
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(31,43,60,.10);
+
+}
+
+.featured-testimonial{
+
+    border-color: #f5edbd;
+
+    background: #fffdec;
+
+}
+
+.testimonial-top{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+}
+
+.testimonial-stars{
+
+    margin-bottom: 20px;
+
+    color: #f3b800;
+
+    font-size: .75rem;
+
+    letter-spacing: 3px;
+
+}
+
+.testimonial-quote{
+
+    color: #f5df75;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    line-height: .7;
+
+}
+
+.testimonial-card blockquote{
+
+    margin-bottom: 27px;
+
+    color: #3f4858;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: .92rem;
+
+    font-style: italic;
+
+    line-height: 1.8;
+
+}
+
+.testimonial-author{
+
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+.testimonial-author img{
+
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+.testimonial-author h3{
+
+    margin-bottom: 3px;
+
+    color: #20293a;
+
+    font-size: .73rem;
+
+    font-weight: 700;
+
+}
+
+.testimonial-author p{
+
+    color: #8a92a1;
+
+    font-size: .64rem;
+
+}
+
+
+/* ==========================
+ABOUT CTA BUTTON
+========================== */
+
+.about-cta-button{
+
+    min-width: 205px;
+
+    min-height: 56px;
+
+    padding: 0 28px;
+
+    border-radius: 12px;
+
+    background: #2478ff;
+
+    color: var(--white);
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 11px;
+
+    font-size: .86rem;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 18px rgba(36,120,255,.28);
+
+    transition: .3s;
+
+}
+
+.about-cta-button img{
+
+    width: 17px;
+
+    height: 17px;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+
+}
+
+.about-cta-button:hover{
+
+    background: #155dcc;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 13px 25px rgba(36,120,255,.35);
+
+}
+
+
+/* ==========================
+ABOUT SOCIAL LINKS
+========================== */
+
+.about-social-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+.about-social-links a{
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #f0f2f5;
+
+    color: #667083;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: .72rem;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+.about-social-links a:hover{
+
+    background: #2478ff;
+
+    color: var(--white);
+
+    transform: scale(1.12);
+
+}
+
+
+/* ==========================
+ABOUT IMAGE EFFECTS
+========================== */
+
+.mission-image,
+.commitment-image{
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+}
+
+.mission-image img,
+.commitment-image img{
+
+    transition: transform .6s ease;
+
+}
+
+.mission-image:hover img,
+.commitment-image:hover img{
+
+    transform: scale(1.035);
+
+}
+
+
+/* ==========================
+ABOUT RESPONSIVE COMPONENTS
+========================== */
+
+@media (max-width: 768px){
+
+    .testimonial-card{
+
+        min-height: 270px;
+
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .about-hero-button{
+
+        min-width: 145px;
+
+        min-height: 49px;
+
+    }
+
+    .testimonial-card{
+
+        padding: 27px;
+
+    }
+
+    .about-cta-button{
+
+        width: 100%;
+
+        max-width: 260px;
+
+    }
+
+}
