@@ -278,7 +278,7 @@ La aplicación estará disponible mediante un servicio de despliegue web.
 
 Enlace del proyecto:
 
-> El enlace público será agregado después de realizar el despliegue.
+https://eco-market-abdel-fabian-cristancho.vercel.app
 
 ---
 
