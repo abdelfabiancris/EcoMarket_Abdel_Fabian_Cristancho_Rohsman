@@ -667,3 +667,219 @@ ACCESSIBILITY
     }
 
 }
+
+/* ==================================================
+CONTACT ANIMATIONS
+================================================== */
+
+
+/* ==========================
+CONTACT INTRO ANIMATION
+========================== */
+
+.contact-intro{
+
+    animation: contactFadeUp .9s ease both;
+
+}
+
+.contact-intro h1{
+
+    animation: contactFadeUp .9s ease .1s both;
+
+}
+
+.contact-intro p{
+
+    animation: contactFadeUp .9s ease .25s both;
+
+}
+
+
+/* ==========================
+CONTACT FORM ANIMATION
+========================== */
+
+.contact-form-card{
+
+    animation: contactFadeRight 1s ease .25s both;
+
+}
+
+
+/* ==========================
+CONTACT INFORMATION ANIMATION
+========================== */
+
+.contact-information{
+
+    animation: contactFadeLeft 1s ease .25s both;
+
+}
+
+
+/* ==========================
+CONTACT INFORMATION CARDS
+========================== */
+
+.contact-info-card{
+
+    animation: contactFadeUp .8s ease both;
+
+}
+
+.contact-info-card:nth-child(1){
+
+    animation-delay: .4s;
+
+}
+
+.contact-info-card:nth-child(2){
+
+    animation-delay: .55s;
+
+}
+
+
+/* ==========================
+CONTACT SOCIAL ANIMATION
+========================== */
+
+.contact-social{
+
+    animation: contactFadeUp .8s ease .65s both;
+
+}
+
+
+/* ==========================
+CONTACT SOCIAL ICONS
+========================== */
+
+.contact-social-links a:nth-child(1){
+
+    animation: contactScaleIn .6s ease .75s both;
+
+}
+
+.contact-social-links a:nth-child(2){
+
+    animation: contactScaleIn .6s ease .9s both;
+
+}
+
+.contact-social-links a:nth-child(3){
+
+    animation: contactScaleIn .6s ease 1.05s both;
+
+}
+
+
+/* ==========================
+CONTACT KEYFRAMES
+========================== */
+
+@keyframes contactFadeUp{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes contactFadeRight{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateX(-40px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+@keyframes contactFadeLeft{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateX(40px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+@keyframes contactScaleIn{
+
+    from{
+
+        opacity: 0;
+
+        transform: scale(.7);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ==========================
+REDUCED MOTION
+========================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    .contact-intro,
+    .contact-intro h1,
+    .contact-intro p,
+    .contact-form-card,
+    .contact-information,
+    .contact-info-card,
+    .contact-social,
+    .contact-social-links a{
+
+        animation: none;
+
+    }
+
+}

@@ -2701,3 +2701,724 @@ ABOUT RESPONSIVE
     }
 
 }
+
+/* ==================================================
+CONTACT PAGE
+================================================== */
+
+
+/* ==========================
+CONTACT HEADER
+========================== */
+
+.contact-header{
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: var(--white);
+
+    border-bottom: 1px solid #e3e7ed;
+
+}
+
+.contact-header-content{
+
+    height: 90px;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+/* ==========================
+CONTACT LOGO
+========================== */
+
+.contact-logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+.contact-logo img{
+
+    width: 30px;
+
+    height: 30px;
+
+}
+
+.contact-logo span{
+
+    color: #182033;
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================
+CONTACT NAVIGATION
+========================== */
+
+.contact-navbar{
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.contact-navbar ul{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 48px;
+
+}
+
+.contact-navbar a{
+
+    color: #465064;
+
+    font-size: .95rem;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+.contact-navbar a:hover{
+
+    color: #1687e8;
+
+}
+
+.contact-navbar .contact-active{
+
+    color: #1687e8;
+
+}
+
+
+/* ==========================
+CONTACT HEADER ICONS
+========================== */
+
+.contact-header-icons{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+}
+
+.contact-icon-button{
+
+    position: relative;
+
+    width: 25px;
+
+    height: 25px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.contact-icon-button img{
+
+    width: 22px;
+
+    height: 22px;
+
+    opacity: .75;
+
+    transition: .3s;
+
+}
+
+.contact-icon-button:hover img{
+
+    opacity: 1;
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================
+CONTACT CART COUNTER
+========================== */
+
+.contact-cart span{
+
+    position: absolute;
+
+    top: -9px;
+
+    right: -8px;
+
+    width: 9px;
+
+    height: 9px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #1687e8;
+
+    color: transparent;
+
+    font-size: 0;
+
+}
+
+
+/* ==========================
+CONTACT MAIN
+========================== */
+
+.contact-main{
+
+    min-height: calc(100vh - 90px);
+
+    padding: 65px 0 145px;
+
+    background: #f7f8fa;
+
+}
+
+
+/* ==========================
+CONTACT INTRODUCTION
+========================== */
+
+.contact-intro{
+
+    margin-bottom: 75px;
+
+    text-align: center;
+
+}
+
+.contact-intro h1{
+
+    margin-bottom: 20px;
+
+    color: #111827;
+
+    font-size: 3.25rem;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+}
+
+.contact-intro p{
+
+    color: #566174;
+
+    font-size: 1.2rem;
+
+    line-height: 1.55;
+
+}
+
+
+/* ==========================
+CONTACT CONTENT
+========================== */
+
+.contact-content{
+
+    width: 100%;
+
+    max-width: 845px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 390px) minmax(0, 390px);
+
+    align-items: start;
+
+    gap: 65px;
+
+}
+
+
+/* ==========================
+CONTACT FORM CARD
+========================== */
+
+.contact-form-card{
+
+    min-height: 605px;
+
+    padding: 35px 32px;
+
+    background: var(--white);
+
+    border: 1px solid #dfe3e8;
+
+    border-radius: 17px;
+
+    box-shadow: 0 2px 5px rgba(17, 24, 39, .04);
+
+}
+
+
+/* ==========================
+CONTACT INFORMATION
+========================== */
+
+.contact-information{
+
+    min-width: 0;
+
+}
+
+
+/* ==========================
+LOCATION TITLE
+========================== */
+
+.contact-location-title{
+
+    height: 30px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+.contact-location-title img{
+
+    width: 21px;
+
+    height: 21px;
+
+}
+
+.contact-location-title h2{
+
+    color: #161d2c;
+
+    font-size: .88rem;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================
+CONTACT MAP
+========================== */
+
+.contact-map{
+
+    position: relative;
+
+    height: 263px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #6d6d6d;
+
+    box-shadow: 0 8px 20px rgba(17, 24, 39, .12);
+
+}
+
+.contact-map > img{
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(1);
+
+}
+
+.contact-map::after{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.253) 20%,
+        rgba(0, 0, 0, 0.397) 55%,
+        rgba(0, 0, 0, 0.884) 100%
+    );
+
+}
+
+.contact-map-overlay{
+
+    position: absolute;
+
+    right: 17px;
+
+    bottom: 17px;
+
+    left: 17px;
+
+    z-index: 2;
+
+    color: var(--white);
+
+}
+
+.contact-map-overlay > img{
+
+    width: 34px;
+
+    height: 34px;
+
+    margin: 0 auto 25px;
+
+}
+
+.contact-map-overlay h3{
+
+    margin-bottom: 3px;
+
+    font-size: 1.08rem;
+
+    font-weight: 600;
+
+}
+
+.contact-map-overlay p{
+
+    color: rgba(255,255,255,.88);
+
+    font-size: .87rem;
+
+}
+
+
+/* ==========================
+CONTACT CARDS
+========================== */
+
+.contact-cards{
+
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+
+/* ==========================
+CONTACT SOCIAL AREA
+========================== */
+
+.contact-social{
+
+    margin-top: 40px;
+
+}
+
+.contact-social > p{
+
+    margin-bottom: 24px;
+
+    color: #697386;
+
+    font-size: .9rem;
+
+}
+
+.contact-social-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+}
+
+
+/* ==========================
+CONTACT FOOTER
+========================== */
+
+.contact-footer{
+
+    background: var(--white);
+
+    border-top: 1px solid #dfe3e8;
+
+}
+
+.contact-footer-content{
+
+    min-height: 95px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+.contact-footer-brand{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+.contact-footer-brand img{
+
+    width: 21px;
+
+    height: 21px;
+
+}
+
+.contact-footer-brand p{
+
+    color: #687386;
+
+    font-size: .88rem;
+
+}
+
+.contact-footer-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+}
+
+.contact-footer-links a{
+
+    color: #687386;
+
+    font-size: .88rem;
+
+    transition: .3s;
+
+}
+
+.contact-footer-links a:hover{
+
+    color: #1687e8;
+
+}
+
+
+/* ==========================
+CONTACT RESPONSIVE
+========================== */
+
+@media (max-width: 992px){
+
+    .contact-main{
+
+        padding-bottom: 100px;
+
+    }
+
+    .contact-content{
+
+        max-width: 720px;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    .contact-header-content{
+
+        grid-template-columns: 1fr auto;
+
+    }
+
+    .contact-navbar{
+
+        display: none;
+
+    }
+
+    .contact-main{
+
+        padding: 50px 0 80px;
+
+    }
+
+    .contact-intro{
+
+        margin-bottom: 50px;
+
+    }
+
+    .contact-intro h1{
+
+        font-size: 2.5rem;
+
+    }
+
+    .contact-intro p{
+
+        font-size: 1rem;
+
+    }
+
+    .contact-intro br{
+
+        display: none;
+
+    }
+
+    .contact-content{
+
+        max-width: 520px;
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-form-card{
+
+        min-height: auto;
+
+    }
+
+    .contact-footer-content{
+
+        padding: 30px 0;
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .contact-header-content{
+
+        height: 75px;
+
+    }
+
+    .contact-logo span{
+
+        font-size: 1.35rem;
+
+    }
+
+    .contact-header-icons{
+
+        gap: 15px;
+
+    }
+
+    .contact-intro h1{
+
+        font-size: 2.05rem;
+
+    }
+
+    .contact-form-card{
+
+        padding: 28px 22px;
+
+    }
+
+    .contact-cards{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-footer-links{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 16px 25px;
+
+    }
+
+}
