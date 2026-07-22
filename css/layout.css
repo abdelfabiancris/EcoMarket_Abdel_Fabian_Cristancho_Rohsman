@@ -44,6 +44,18 @@ LOGO
 
 }
 
+.logo a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    text-decoration:none;
+
+}
+
 .logo img{
 
     width: 30px;
@@ -52,11 +64,13 @@ LOGO
 
 .logo h1{
 
-    font-size: 1.8rem;
+    margin:0;
 
-    font-weight: 700;
+    font-size:1.8rem;
 
-    color: var(--black);
+    font-weight:700;
+
+    color:var(--black);
 
 }
 
